@@ -19,13 +19,13 @@ async def hep(event):
             await asyncio.sleep(15)
             await event.delete()
         else:
-            await event.edit("Masukin module yang Bene bang.")
-
+            await event.edit("Masukin module yang Bener bang.")
+            
     else:
         string1 = "Harap tentukan modul mana yang Anda ingin bantuannya !!\nUsage: .help <nama modul>\n\n"
         string = "• "
         string3 = "Daftar untuk semua perintah yang tersedia di bawah ini: "
-        string2 = "-------------------------------------------------------------"
+        string2 = "---------------------------------------------------------------------------"
         for i in CMD_HELP:
             string += "`" + str(i)
             string += "`  •  "
