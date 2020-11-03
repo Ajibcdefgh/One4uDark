@@ -167,11 +167,11 @@ async def mention_afk(mention):
                 wday = now + datetime.timedelta(days=-days)
                 afk_since = wday.strftime("%A")
         elif hours > 1:
-            afk_since = f"`{int(hours)}h{int(minutes)}m` ago"
+            afk_since = f"`{int(hours)}h{int(minutes)}m` Yang lalu"
         elif minutes > 0:
-            afk_since = f"`{int(minutes)}m{int(seconds)}s` ago"
+            afk_since = f"`{int(minutes)}m{int(seconds)}s` Yang lalu"
         else:
-            afk_since = f"`{int(seconds)}s` ago"
+            afk_since = f"`{int(seconds)}s` Yang lalu"
         if mention.sender_id not in USERS:
             if AFKREASON:
                 await mention.reply(
@@ -185,7 +185,7 @@ async def mention_afk(mention):
             if USERS[mention.sender_id] % randint(2, 4) == 0:
                 if AFKREASON:
                     await mention.reply(
-                        f"Saya masih AFK sejak itu {afk_since}.\
+                        f"Saya masih AFK sejak {afk_since}.\
                             \nKarena: `{AFKREASON}`"
                     )
                 else:
@@ -246,11 +246,11 @@ async def afk_on_pm(sender):
                     wday = now + datetime.timedelta(days=-days)
                     afk_since = wday.strftime("%A")
             elif hours > 1:
-                afk_since = f"`{int(hours)}h{int(minutes)}m` ago"
+                afk_since = f"`{int(hours)}h{int(minutes)}m` Yang lalu"
             elif minutes > 0:
-                afk_since = f"`{int(minutes)}m{int(seconds)}s` ago"
+                afk_since = f"`{int(minutes)}m{int(seconds)}s` Yang lalu"
             else:
-                afk_since = f"`{int(seconds)}s` ago"
+                afk_since = f"`{int(seconds)}s` Yang lalu"
             if sender.sender_id not in USERS:
                 if AFKREASON:
                     await sender.reply(
