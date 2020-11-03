@@ -79,9 +79,10 @@ async def download(target_file):
                 LOGS.info(str(e))
         if downloader.isSuccessful():
             await target_file.edit(
-                "Downloaded to `{}` successfully !!".format(downloaded_file_name)
+                "Diunduh ke `{}` berhasil !!".format(downloaded_file_name)
             )
         else:
+           
             await target_file.edit("Incorrect URL\n{}".format(url))
     elif target_file.reply_to_msg_id:
         try:
@@ -97,7 +98,7 @@ async def download(target_file):
             await target_file.edit(str(e))
         else:
             await target_file.edit(
-                "Downloaded ke `{}` sukses !!".format(downloaded_file_name)
+                "Diunduh ke `{}` sukses !!".format(downloaded_file_name)
             )
     else:
         await target_file.edit("Balas pesan untuk mengunduh ke server lokal saya.")
@@ -175,9 +176,9 @@ async def uploadir(udir_event):
                     )
                 os.remove(single_file)
                 uploaded = uploaded + 1
-        await udir_event.edit("Uploaded {} files successfully !!".format(uploaded))
+        await udir_event.edit("Upload {} file berhasil !!".format(uploaded))
     else:
-        await udir_event.edit("404: Directory Not Found")
+        await udir_event.edit("404: Direktori Tidak Ditemukan")
 
 
 @register(pattern=r".upload (.*)", outgoing=True)
@@ -199,9 +200,9 @@ async def upload(u_event):
                 progress(d, t, u_event, c_time, "[UPLOAD]", input_str)
             ),
         )
-        await u_event.edit("Uploaded successfully !!")
+        await u_event.edit("Diupload successfully !!")
     else:
-        await u_event.edit("404: File Not Found")
+        await u_event.edit("404: Berkas tidak ditemukan")
 
 
 def get_video_thumb(file, output=None, width=90):
@@ -341,11 +342,11 @@ async def uploadas(uas_event):
             elif spam_big_messages:
                 return await uas_event.edit("TBD: Not (yet) Implemented")
             os.remove(thumb)
-            await uas_event.edit("Uploaded successfully !!")
+            await uas_event.edit("Berhasil diunggah !!")
         except FileNotFoundError as err:
             await uas_event.edit(str(err))
     else:
-        await uas_event.edit("404: File Not Found")
+        await uas_event.edit("404: Berkas tidak ditemukan")
 
 
 CMD_HELP.update(
