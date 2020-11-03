@@ -130,13 +130,13 @@ async def get_weather(weather):
         return xx
 
     await weather.edit(
-        f"**Temperature:** `{celsius(curtemp)}°C | {fahrenheit(curtemp)}°F`\n"
-        + f"**Min. Temp.:** `{celsius(min_temp)}°C | {fahrenheit(min_temp)}°F`\n"
-        + f"**Max. Temp.:** `{celsius(max_temp)}°C | {fahrenheit(max_temp)}°F`\n"
-        + f"**Humidity:** `{humidity}%`\n"
-        + f"**Wind:** `{kmph[0]} kmh | {mph[0]} mph, {findir}`\n"
-        + f"**Sunrise:** `{sun(sunrise)}`\n"
-        + f"**Sunset:** `{sun(sunset)}`\n\n"
+        f"**Suhu:** `{celsius(curtemp)}°C | {fahrenheit(curtemp)}°F`\n"
+        + f"**Min. Suhu.:** `{celsius(min_temp)}°C | {fahrenheit(min_temp)}°F`\n"
+        + f"**Max. Suhu.:** `{celsius(max_temp)}°C | {fahrenheit(max_temp)}°F`\n"
+        + f"**Kelembaban:** `{humidity}%`\n"
+        + f"**Angin:** `{kmph[0]} kmh | {mph[0]} mph, {findir}`\n"
+        + f"**Matahari terbit:** `{sun(sunrise)}`\n"
+        + f"**Matahari terbenam:** `{sun(sunset)}`\n\n"
         + f"**{desc}**\n"
         + f"`{cityname}, {fullc_n}`\n"
         + f"`{time}`"
@@ -185,14 +185,14 @@ async def get_wtr(wtr):
 
     text = (
         f"**{desc}**\n\n"
-        + f"**Temperature:** `{tempC}°C | {tempF}°F`\n"
-        + f"**Min. Temp.:** `{mintempC}°C | {mintempF}°F`\n"
-        + f"**Max. Temp.:** `{maxtempC}°C | {maxtempF}°F`\n"
-        + f"**Humidity:** `{humidity}%`\n"
-        + f"**Wind:** `{windK}Km/h | {windM}Mp/h, {windD}`\n"
-        + f"**Sunrise:** `{sunrise}`\n"
-        + f"**Sunset:** `{sunset}`\n"
-        + f"**Updated on:** `{time}`\n\n"
+        + f"**Suhu:** `{tempC}°C | {tempF}°F`\n"
+        + f"**Min. Suhu.:** `{mintempC}°C | {mintempF}°F`\n"
+        + f"**Max. Suhu.:** `{maxtempC}°C | {maxtempF}°F`\n"
+        + f"**Kelembaban:** `{humidity}%`\n"
+        + f"**Angin:** `{windK}Km/h | {windM}Mp/h, {windD}`\n"
+        + f"**Matahari terbit:** `{sunrise}`\n"
+        + f"**Matahari terbenam:** `{sunset}`\n"
+        + f"**Diperbarui di:** `{time}`\n\n"
         + f"`{region}, {country}`"
     )
 
@@ -201,9 +201,9 @@ async def get_wtr(wtr):
 
 CMD_HELP.update(
     {
-        "weather": ".weather <city> or .weather <city>, <country name/code>\
-    \nUsage: Gets the weather of a city.",
+        "weather": ".weather <city> atau .weather <city>, <country name/code>\
+    \nUsage: Mendapatkan cuaca kota.",
         "wtr": ".wtr <city> or .wtr <city>, <country name/code>\
-    \nUsage: Gets the weather of a city.",
+    \nUsage: Mendapat cuaca kota.",
     }
 )
