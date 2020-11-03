@@ -1,4 +1,4 @@
-# One4uDark Userbot Based on [One4uBot](https://github.com/MoveAngel/One4uBot)
+# One4uDark Userbot Based on [Telegram-Paperplane](https://github.com/RaphielGang)
 
 ![logo](https://telegra.ph/file/4eb74eace8a198a6d8e21.jpg)
 
@@ -40,10 +40,10 @@ Thanks for all :
 * [RaphielGang](https://github.com/RaphielGang) - Telegram-Paperplane
 * [AdekMaulana](https://github.com/adekmaulana) - ProjectBish
 * [Mr.Miss](https://github.com/keselekpermen69) - Userbutt
-* [MoveAngel](https://github.com/MoveAngel/One4uBot) - One4uBot
-* [TheWhiteHarlot](https://github.com/thewhiteharlot/PurpleBot) - PurpleBot
-* [Alfiananda](https://github.com/alfianandaa/ProjectAlf) - ProjectAlf
-* [X-Newbie](https://github.com/X-Newbie/Xbot-Remix) - Xbot-Remix
+* [MoveAngel](https://github.com/MoveAngel) - One4uBot
+* [TheWhiteHarlot](https://github.com/thewhiteharlot) - PurpleBot
+* [Alfiananda](https://github.com/alfianandaa) - ProjectAlf
+* [X-Newbie](https://github.com/X-Newbie) - Xbot-Remix
 
 and many more people who aren't mentioned here, but may be found in [Contributors](https://github.com/MoveAngel/One4uBot/graphs/contributors).
 
