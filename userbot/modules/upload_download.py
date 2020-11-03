@@ -200,7 +200,7 @@ async def upload(u_event):
                 progress(d, t, u_event, c_time, "[UPLOAD]", input_str)
             ),
         )
-        await u_event.edit("Diupload successfully !!")
+        await u_event.edit("Diupload berhasil !!")
     else:
         await u_event.edit("404: Berkas tidak ditemukan")
 
