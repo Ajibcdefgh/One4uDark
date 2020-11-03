@@ -229,17 +229,17 @@ async def amireallyalive(alive):
     """ For .alive command, check if the bot is running.  """
     uptime = await get_readable_time((time.time() - StartTime))
     output = (
-        "`Layanan bot sedang berjalan...`\n"
-        "`▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰`\n"
-        f"»[>⚙️ `Telethon       : v{version.__version__} `\n"
-        f"»[>🐍 `Python         : v{python_version()} `\n"
-        f"»[>👤 `User           :`  {DEFAULTUSER} \n"
-        "`▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱\n"
-        f"»[>💻 `Running on     : {repo.active_branch.name} `\n"
-        f"»[>🗃 `Loaded modules : {len(modules)} `\n"
-        f"»[>🤖 `One4uDark      : v{USERBOT_VERSION} `\n"
-        f"»[>🕒 `Bot Uptime     : {uptime} `\n"
-        "`▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰`"
+        "`Bot services is running...`\n"
+        "`▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰`\n"
+        f"•  ⚙️ `Telethon       : v{version.__version__} `\n"
+        f"•  🐍 `Python         : v{python_version()} `\n"
+        f"•  👤 `User           :`  {DEFAULTUSER} \n"
+        "`▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱`\n"
+        f"•  💻 `Running on     : {repo.active_branch.name} `\n"
+        f"•  🗃 `Loaded modules : {len(modules)} `\n"
+        f"•  🤖 `One4uDark      : v{USERBOT_VERSION} `\n"
+        f"•  🕒 `Bot Uptime     : {uptime} `\n"
+        "`▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰`"
     )
     if ALIVE_LOGO:
         try:
@@ -299,9 +299,9 @@ CMD_HELP.update(
 CMD_HELP.update(
     {
         "alive": ".alive | .on\
-    \nUsage: Ketik .alive / .on untuk melihat apakah bot Anda berfungsi atau tidak.\
+    \nUsage: Type .alive/.on untuk melihat apakah bot Anda berfungsi atau tidak.\
     \n\n.aliveu <text>\
-    \nUsage: Mengubah 'alive' pengguna ke teks yang Anda inginkan.\
+    \nUsage: Mengubah 'user' hidup ke teks yang Anda inginkan.\
     \n\n.resetalive\
     \nUsage: Mengatur ulang pengguna ke default."
     }
