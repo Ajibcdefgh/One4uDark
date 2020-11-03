@@ -448,7 +448,9 @@ async def lastname(steal):
     if message.sender.bot:
         await steal.edit("```Reply to actual users message.```")
         return
-    await steal.edit("```Tunggu sebentar saya sedang tanya beberapa data dari Emaknya```")
+    await steal.edit(
+        "```Tunggu sebentar saya sedang tanya beberapa data dari Emaknya```"
+    )
     async with bot.conversation(chat) as conv:
         try:
             msg = await conv.send_message(id)
