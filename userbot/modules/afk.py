@@ -278,7 +278,7 @@ CMD_HELP.update(
     {
         "afk": ".afk [Alasan Opsional]\
 \nUsage: Menetapkan Anda sebagai afk.\nBalasan untuk siapa saja yang menandai/PM.\
-Anda memberi tahu mereka bahwa Anda AFK(karena).\n\nSmematikan AFK saat Anda mengetik kembali apa saja, di mana saja.\
+Anda memberi tahu mereka bahwa Anda AFK(karena).\n\nmematikan AFK saat Anda mengetik kembali apa saja, di mana saja.\
 "
     }
 )
