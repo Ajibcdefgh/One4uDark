@@ -231,14 +231,14 @@ async def amireallyalive(alive):
     output = (
         "`Bot services is running...`\n"
         "`▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰`\n"
-        f"•  ⚙️ `Telethon       : v{version.__version__} `\n"
-        f"•  🐍 `Python         : v{python_version()} `\n"
-        f"•  👤 `User           :`  {DEFAULTUSER} \n"
+        f"»┣[ ⚙️ `Telethon       : v{version.__version__} `\n"
+        f"»┣[ 🐍 `Python         : v{python_version()} `\n"
+        f"»┣[ 👤 `User           :`  {DEFAULTUSER} \n"
         "`▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱`\n"
-        f"•  💻 `Running on     : {repo.active_branch.name} `\n"
-        f"•  🗃 `Loaded modules : {len(modules)} `\n"
-        f"•  🤖 `One4uDark      : v{USERBOT_VERSION} `\n"
-        f"•  🕒 `Bot Uptime     : {uptime} `\n"
+        f"»┣[ 💻 `Running on     : {repo.active_branch.name} `\n"
+        f"»┣[ 🗃 `Loaded modules : {len(modules)} `\n"
+        f"≥┣[ 🤖 `One4uDark      : v{USERBOT_VERSION} `\n"
+        f"»┣[ 🕒 `Bot Uptime     : {uptime} `\n"
         "`▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰`"
     )
     if ALIVE_LOGO:
