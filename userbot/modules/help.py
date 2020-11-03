@@ -5,11 +5,8 @@
 #
 """ Userbot help command """
 
-import asyncio
 from userbot import CMD_HELP
 from userbot.events import register
-
-modules = CMD_HELP
 
 
 @register(outgoing=True, pattern="^.help(?: |$)(.*)")
@@ -20,21 +17,14 @@ async def help(event):
         if args in CMD_HELP:
             await event.edit(str(CMD_HELP[args]))
         else:
-            await event.edit("**Module Salah Goblokkkk!!**")
-            await asyncio.sleep(18)
-            await event.delete()
+            await event.edit("Masukin module yang bener ngab.")
     else:
-        await event.edit(f"**╭━━━━━━━━━━━━━━━━━━━━━╮**\
-            \n│   Help for [🤖 One4uDark 🤖]\
-            \n╰━━━━━━━━━━━━━━━━━━━━━╯ \
-            \n╭━━━━━━━━━━━━━━━━━━━━━╮\
-            \n│   Untuk melihat lengkap Command\
-            \n│   Contoh: .help <nama module>\
-            \n│   Modules Aktif: {len(modules)}\
-           \n╰━━━━━━━━━━━━━━━━━━━━━╯")
         string = ""
         for i in CMD_HELP:
             string += "`" + str(i)
-            string += "`\t• "
-        await event.reply(f"•{string}•"
-                          "\n╾─────────────────────╼\
+            string += "`\t\t\t[]\t\t\t "
+        await event.edit(
+            f"{string}"
+            "\n\nTentukan modul mana yang Anda ingin bantuannya !!\
+                        \n**Usage:** `.help` <nama modul>"
+        )
