@@ -82,7 +82,7 @@ async def download(target_file):
                 "Diunduh ke `{}` berhasil !!".format(downloaded_file_name)
             )
         else:
-           
+
             await target_file.edit("Incorrect URL\n{}".format(url))
     elif target_file.reply_to_msg_id:
         try:
