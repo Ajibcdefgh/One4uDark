@@ -57,10 +57,10 @@ async def glitch(event):
     if event.is_reply:
         data = await check_media(reply_message)
         if isinstance(data, bool):
-            await event.edit("`Unsupported Files...`")
+            await event.edit("`File Tidak Didukung....`")
             return
     else:
-        await event.edit("`Reply to Any Media Sur`")
+        await event.edit("`Balas ke Media sar`")
         return
 
     try:
@@ -69,7 +69,7 @@ async def glitch(event):
             raise ValueError
     except ValueError:
         value = 2
-    await event.edit("```Glitching This Media```")
+    await event.edit("```Glitching Media Ini```")
     await asyncio.sleep(2)
     file_name = "glitch.png"
     to_download_directory = TEMP_DOWNLOAD_DIRECTORY
@@ -92,7 +92,7 @@ async def glitch(event):
         duration=DURATION,
         loop=LOOP,
     )
-    await event.edit("`Uploading Glitched Media...`")
+    await event.edit("`Mengupload Media yang Glitching...`")
     c_time = time.time()
     nosave = await event.client.send_file(
         event.chat_id,
@@ -134,11 +134,11 @@ async def mim(event):
     if event.is_reply:
         data = await check_media(reply_message)
         if isinstance(data, bool):
-            await event.edit("`Unsupported Files...`")
+            await event.edit("`File Tidak Didukung...`")
             return
 
         await event.edit(
-            "```Transfiguration Time! Mwahaha Memifying this image! (」ﾟﾛﾟ)｣ ```"
+            "```Waktu Transfigurasi! Mwahaha Mengubah gambar ini! (」ﾟﾛﾟ)｣ ```"
         )
         await asyncio.sleep(5)
         text = event.pattern_match.group(1)
@@ -280,7 +280,7 @@ async def quotess(qotli):
     chat = "@QuotLyBot"
     if reply_message.sender.bot:
         return await qotli.edit("```Reply to actual users message.```")
-    await qotli.edit("```Making a Quote```")
+    await qotli.edit("```Membuat Stiker```")
     try:
         async with bot.conversation(chat) as conv:
             try:
@@ -448,7 +448,7 @@ async def lastname(steal):
     if message.sender.bot:
         await steal.edit("```Reply to actual users message.```")
         return
-    await steal.edit("```Sit tight while I steal some data from NASA```")
+    await steal.edit("```Tunggu sebentar saya sedang tanya beberapa data dari Emaknya```")
     async with bot.conversation(chat) as conv:
         try:
             msg = await conv.send_message(id)
@@ -539,7 +539,7 @@ CMD_HELP.update(
 CMD_HELP.update(
     {
         "sangmata": ".sg \
-          \nUsage: Steal ur or friend name."
+          \nUsage: Bongkar kedok temanmu."
     }
 )
 
