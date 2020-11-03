@@ -40,7 +40,7 @@ Thanks for all :
 * [RaphielGang](https://github.com/RaphielGang) - Telegram-Paperplane
 * [AdekMaulana](https://github.com/adekmaulana) - ProjectBish
 * [Mr.Miss](https://github.com/keselekpermen69) - Userbutt
-* [MoveAngel](https://github.com/MoveAngel) - One4uBot
+* [MoveAngel](https://github.com/MoveAngel) - Original One4uBot
 * [TheWhiteHarlot](https://github.com/thewhiteharlot) - PurpleBot
 * [Alfiananda](https://github.com/alfianandaa) - ProjectAlf
 * [X-Newbie](https://github.com/X-Newbie) - Xbot-Remix
