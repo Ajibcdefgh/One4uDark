@@ -20,7 +20,7 @@ async def hep(event):
             await event.delete()
         else:
             await event.edit("Masukin module yang Bener bang.")
-            
+
     else:
         string1 = "Harap tentukan modul mana yang Anda ingin bantuannya !!\nUsage: .help <nama modul>\n\n"
         string = "• "
